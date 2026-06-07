@@ -1,446 +1,967 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Se YouTube Channel Fast Monetize Karo - Complete Guide</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #0b0f19;
-            color: #f3f4f6;
-            overflow-x: hidden;
-        }
-        /* Custom Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Glassmorphism Effect */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 1rem;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .glass-card:hover {
-            transform: translateY(-8px);
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(239, 68, 68, 0.4);
-            box-shadow: 0 15px 30px rgba(239, 68, 68, 0.1);
-        }
-        /* Scroll Animation States */
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        /* Glowing effects */
-        .glow-red {
-            box-shadow: 0 0 40px rgba(239, 68, 68, 0.15);
-        }
-        .glow-text {
-            text-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Se YouTube Channel Fast Monetize Karo</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --primary-red: #e63946; --dark-bg: #0a0a0a; --card-bg: #1a1a1a; --card-bg-light: #2a2a2a;
+    --text-white: #ffffff; --text-gray: #b0b0b0; --text-light: #888888;
+    --accent-green: #4ade80; --accent-yellow: #fbbf24; --accent-orange: #fb923c;
+    --accent-blue: #60a5fa; --accent-purple: #a78bfa;
+}
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Poppins', sans-serif; background: var(--dark-bg); color: var(--text-white);
+    overflow-x: hidden; line-height: 1.6;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--dark-bg); }
+::-webkit-scrollbar-thumb { background: var(--primary-red); border-radius: 4px; }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(60px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-60px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+@keyframes borderGlow { 0%, 100% { border-color: rgba(230, 57, 70, 0.3); } 50% { border-color: rgba(230, 57, 70, 0.8); } }
+@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); } 40% { transform: translateX(-50%) translateY(-10px); } 60% { transform: translateX(-50%) translateY(-5px); } }
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+@keyframes particle { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; } }
+
+.animate-on-scroll { opacity: 0; transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+.animate-on-scroll.visible { opacity: 1; }
+.fade-up { transform: translateY(60px); }
+.fade-up.visible { transform: translateY(0); }
+.scale-in { transform: scale(0.8); }
+.scale-in.visible { transform: scale(1); }
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+.delay-6 { transition-delay: 0.6s; }
+
+.navbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 15px 50px;
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(10, 10, 10, 0.95); backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s ease;
+}
+.navbar.scrolled { padding: 10px 50px; background: rgba(10, 10, 10, 0.98); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); }
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-red); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.logo i { font-size: 1.8rem; }
+.nav-links { display: flex; gap: 30px; list-style: none; }
+.nav-links a { color: var(--text-gray); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: all 0.3s ease; position: relative; }
+.nav-links a:hover { color: var(--primary-red); }
+.nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--primary-red); transition: width 0.3s ease; }
+.nav-links a:hover::after { width: 100%; }
+
+.hero {
+    min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; padding: 120px 20px 80px; position: relative; overflow: hidden;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 50%, #0a0a0a 100%);
+}
+.hero::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(230, 57, 70, 0.1) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+}
+.hero-content { position: relative; z-index: 2; max-width: 900px; }
+.hero-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(230, 57, 70, 0.15); border: 1px solid rgba(230, 57, 70, 0.3);
+    padding: 10px 25px; border-radius: 50px; font-size: 0.85rem; color: var(--primary-red);
+    margin-bottom: 30px; animation: fadeInDown 0.8s ease;
+}
+.hero-badge i { animation: pulse 2s ease-in-out infinite; }
+.hero h1 { font-size: 3.5rem; font-weight: 900; line-height: 1.2; margin-bottom: 20px; animation: fadeInUp 0.8s ease 0.2s both; }
+.hero h1 .highlight { color: var(--primary-red); position: relative; display: inline-block; }
+.hero h1 .highlight::after { content: ''; position: absolute; bottom: 5px; left: 0; right: 0; height: 8px; background: rgba(230, 57, 70, 0.3); border-radius: 4px; z-index: -1; }
+.hero-subtitle { font-size: 1.2rem; color: var(--text-gray); margin-bottom: 40px; animation: fadeInUp 0.8s ease 0.4s both; }
+.hero-stats { display: flex; gap: 40px; justify-content: center; margin-bottom: 50px; animation: fadeInUp 0.8s ease 0.6s both; }
+.stat-item { text-align: center; }
+.stat-number { font-size: 2.5rem; font-weight: 800; color: var(--primary-red); display: block; }
+.stat-label { font-size: 0.85rem; color: var(--text-gray); }
+.hero-cta { display: flex; gap: 20px; justify-content: center; animation: fadeInUp 0.8s ease 0.8s both; }
+.btn-primary {
+    background: var(--primary-red); color: white; padding: 15px 40px; border-radius: 50px;
+    text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.4s ease;
+    display: inline-flex; align-items: center; gap: 10px; border: none; cursor: pointer; position: relative; overflow: hidden;
+}
+.btn-primary::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); transition: left 0.5s ease; }
+.btn-primary:hover::before { left: 100%; }
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 20px 40px rgba(230, 57, 70, 0.4); }
+.btn-secondary {
+    background: transparent; color: var(--text-white); padding: 15px 40px; border-radius: 50px;
+    text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.4s ease;
+    display: inline-flex; align-items: center; gap: 10px; border: 2px solid rgba(255, 255, 255, 0.2); cursor: pointer;
+}
+.btn-secondary:hover { border-color: var(--primary-red); color: var(--primary-red); transform: translateY(-3px); }
+.scroll-indicator { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); animation: bounce 2s infinite; }
+.scroll-indicator i { font-size: 2rem; color: var(--primary-red); animation: float 2s ease-in-out infinite; }
+
+.section { padding: 100px 50px; position: relative; }
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-tag {
+    display: inline-block; background: rgba(230, 57, 70, 0.15); color: var(--primary-red);
+    padding: 8px 20px; border-radius: 50px; font-size: 0.85rem; font-weight: 600;
+    margin-bottom: 15px; border: 1px solid rgba(230, 57, 70, 0.2);
+}
+.section-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 15px; }
+.section-subtitle { color: var(--text-gray); max-width: 600px; margin: 0 auto; }
+
+.growth-formula { background: linear-gradient(180deg, var(--dark-bg) 0%, #0f0f0f 100%); }
+.formula-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
+.formula-card {
+    background: var(--card-bg); border-radius: 20px; padding: 35px; border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s ease; position: relative; overflow: hidden;
+}
+.formula-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary-red), var(--accent-orange)); transform: scaleX(0); transition: transform 0.4s ease; }
+.formula-card:hover::before { transform: scaleX(1); }
+.formula-card:hover { transform: translateY(-10px); border-color: rgba(230, 57, 70, 0.2); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); }
+.formula-icon { width: 60px; height: 60px; border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px; transition: all 0.4s ease; }
+.formula-card:hover .formula-icon { transform: scale(1.1) rotate(5deg); }
+.icon-red { background: rgba(230, 57, 70, 0.15); color: var(--primary-red); }
+.icon-green { background: rgba(74, 222, 128, 0.15); color: var(--accent-green); }
+.icon-yellow { background: rgba(251, 191, 36, 0.15); color: var(--accent-yellow); }
+.icon-orange { background: rgba(251, 146, 60, 0.15); color: var(--accent-orange); }
+.icon-blue { background: rgba(96, 165, 250, 0.15); color: var(--accent-blue); }
+.icon-purple { background: rgba(167, 139, 250, 0.15); color: var(--accent-purple); }
+.formula-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
+.formula-card p { color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; }
+.formula-number { position: absolute; top: 20px; right: 20px; font-size: 3rem; font-weight: 900; color: rgba(255, 255, 255, 0.03); }
+
+.ypp-section { background: linear-gradient(135deg, #0f0f0f 0%, var(--dark-bg) 100%); }
+.ypp-container { max-width: 1000px; margin: 0 auto; }
+.ypp-card { background: var(--card-bg); border-radius: 25px; padding: 50px; border: 1px solid rgba(255, 255, 255, 0.05); position: relative; overflow: hidden; }
+.ypp-card::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(230, 57, 70, 0.05) 0%, transparent 70%); animation: rotate 20s linear infinite; }
+.ypp-header { text-align: center; margin-bottom: 40px; position: relative; z-index: 1; }
+.ypp-requirements { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; position: relative; z-index: 1; }
+.ypp-req-item { text-align: center; padding: 30px; background: rgba(255, 255, 255, 0.02); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s ease; }
+.ypp-req-item:hover { background: rgba(230, 57, 70, 0.05); border-color: rgba(230, 57, 70, 0.2); transform: translateY(-5px); }
+.ypp-req-icon { width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; position: relative; }
+.ypp-req-icon::after { content: ''; position: absolute; inset: -5px; border-radius: 50%; border: 2px solid; animation: borderGlow 2s ease-in-out infinite; }
+.req-subscribers { background: rgba(230, 57, 70, 0.15); color: var(--primary-red); }
+.req-subscribers::after { border-color: var(--primary-red); }
+.req-hours { background: rgba(96, 165, 250, 0.15); color: var(--accent-blue); }
+.req-hours::after { border-color: var(--accent-blue); }
+.req-days { background: rgba(251, 191, 36, 0.15); color: var(--accent-yellow); }
+.req-days::after { border-color: var(--accent-yellow); }
+.ypp-req-number { font-size: 2.5rem; font-weight: 900; margin-bottom: 5px; }
+.ypp-req-label { color: var(--text-gray); font-size: 0.9rem; }
+.ypp-steps { margin-top: 40px; display: flex; justify-content: center; gap: 20px; position: relative; z-index: 1; flex-wrap: wrap; }
+.ypp-step { display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); padding: 15px 25px; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.05); }
+.ypp-step-number { width: 30px; height: 30px; border-radius: 50%; background: var(--primary-red); display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; }
+
+.niche-section { background: var(--dark-bg); }
+.niche-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto; }
+.niche-card { background: var(--card-bg); border-radius: 20px; padding: 30px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s ease; cursor: pointer; position: relative; overflow: hidden; }
+.niche-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 0; background: linear-gradient(to top, rgba(230, 57, 70, 0.1), transparent); transition: height 0.4s ease; }
+.niche-card:hover::after { height: 100%; }
+.niche-card:hover { transform: translateY(-10px) scale(1.02); border-color: rgba(230, 57, 70, 0.2); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4); }
+.niche-icon { width: 70px; height: 70px; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; transition: all 0.4s ease; }
+.niche-card:hover .niche-icon { transform: scale(1.2) rotate(10deg); }
+.niche-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
+.niche-card .niche-stats { display: flex; justify-content: center; gap: 15px; margin-top: 15px; }
+.niche-stat { font-size: 0.8rem; color: var(--text-gray); }
+.niche-stat span { color: var(--accent-green); font-weight: 700; }
+
+.ai-tools-section { background: linear-gradient(180deg, #0f0f0f 0%, var(--dark-bg) 100%); }
+.tools-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; max-width: 1200px; margin: 0 auto; }
+.tool-card { background: var(--card-bg); border-radius: 20px; padding: 35px; border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s ease; position: relative; overflow: hidden; }
+.tool-card::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.02), transparent); transition: left 0.6s ease; }
+.tool-card:hover::before { left: 100%; }
+.tool-card:hover { transform: translateY(-8px); border-color: rgba(230, 57, 70, 0.2); box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5); }
+.tool-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+.tool-icon { width: 55px; height: 55px; border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: all 0.4s ease; }
+.tool-card:hover .tool-icon { transform: rotate(10deg) scale(1.1); }
+.tool-info h3 { font-size: 1.2rem; font-weight: 700; }
+.tool-info .tool-tag { font-size: 0.8rem; color: var(--text-gray); }
+.tool-description { color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px; }
+.tool-features { display: flex; flex-wrap: wrap; gap: 8px; }
+.tool-feature { background: rgba(255, 255, 255, 0.03); padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; color: var(--text-gray); border: 1px solid rgba(255, 255, 255, 0.05); }
+
+.shorts-section { background: var(--dark-bg); }
+.shorts-container { max-width: 1000px; margin: 0 auto; }
+.shorts-card { background: var(--card-bg); border-radius: 25px; padding: 50px; border: 1px solid rgba(255, 255, 255, 0.05); }
+.shorts-strategies { display: grid; gap: 25px; }
+.strategy-item { display: flex; align-items: flex-start; gap: 25px; padding: 30px; background: rgba(255, 255, 255, 0.02); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s ease; }
+.strategy-item:hover { background: rgba(230, 57, 70, 0.03); border-color: rgba(230, 57, 70, 0.1); transform: translateX(10px); }
+.strategy-icon { width: 60px; height: 60px; border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; transition: all 0.4s ease; }
+.strategy-item:hover .strategy-icon { transform: scale(1.2) rotate(10deg); }
+.strategy-content h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
+.strategy-content p { color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; }
+.strategy-badge { display: inline-block; background: rgba(230, 57, 70, 0.15); color: var(--primary-red); padding: 5px 15px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-top: 10px; }
+
+.timing-section { background: linear-gradient(180deg, #0f0f0f 0%, var(--dark-bg) 100%); }
+.timing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; max-width: 1000px; margin: 0 auto; }
+.timing-card { background: var(--card-bg); border-radius: 20px; padding: 35px; border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s ease; display: flex; align-items: center; gap: 25px; }
+.timing-card:hover { transform: translateY(-5px); border-color: rgba(230, 57, 70, 0.2); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); }
+.timing-icon { width: 70px; height: 70px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0; }
+.timing-info h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 5px; }
+.timing-info p { color: var(--text-gray); font-size: 0.9rem; }
+.timing-badge { display: inline-block; margin-top: 10px; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
+.monetization-section { background: var(--dark-bg); }
+.monetization-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; max-width: 1000px; margin: 0 auto; }
+.monetization-card { background: var(--card-bg); border-radius: 20px; padding: 40px; border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s ease; text-align: center; }
+.monetization-card:hover { transform: translateY(-10px); border-color: rgba(230, 57, 70, 0.2); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4); }
+.monetization-icon { width: 80px; height: 80px; border-radius: 25px; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; font-size: 2rem; transition: all 0.4s ease; }
+.monetization-card:hover .monetization-icon { transform: scale(1.15) rotate(5deg); }
+.monetization-card h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 15px; }
+.monetization-card p { color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; }
+.monetization-earning { margin-top: 20px; padding: 15px; background: rgba(255, 255, 255, 0.02); border-radius: 15px; font-size: 0.85rem; color: var(--text-gray); }
+.monetization-earning span { color: var(--accent-green); font-weight: 700; }
+
+.mistakes-section { background: linear-gradient(180deg, #0f0f0f 0%, var(--dark-bg) 100%); }
+.mistakes-list { max-width: 900px; margin: 0 auto; display: grid; gap: 20px; }
+.mistake-item { display: flex; align-items: center; gap: 25px; background: var(--card-bg); padding: 30px 40px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s ease; }
+.mistake-item:hover { transform: translateX(10px); border-color: rgba(230, 57, 70, 0.2); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+.mistake-number { width: 50px; height: 50px; border-radius: 15px; background: rgba(230, 57, 70, 0.15); color: var(--primary-red); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; flex-shrink: 0; }
+.mistake-content h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 5px; }
+.mistake-content p { color: var(--text-gray); font-size: 0.9rem; }
+
+.footer { background: #050505; padding: 80px 50px 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+.footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 50px; margin-bottom: 60px; }
+.footer-brand h3 { font-size: 1.5rem; font-weight: 800; color: var(--primary-red); margin-bottom: 15px; }
+.footer-brand p { color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; }
+.footer-links h4 { font-size: 1rem; font-weight: 700; margin-bottom: 20px; }
+.footer-links ul { list-style: none; }
+.footer-links li { margin-bottom: 12px; }
+.footer-links a { color: var(--text-gray); text-decoration: none; font-size: 0.9rem; transition: all 0.3s ease; display: flex; align-items: center; gap: 8px; }
+.footer-links a:hover { color: var(--primary-red); transform: translateX(5px); }
+.footer-bottom { text-align: center; padding-top: 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); color: var(--text-gray); font-size: 0.85rem; }
+.footer-social { display: flex; gap: 15px; margin-top: 20px; }
+.footer-social a { width: 45px; height: 45px; border-radius: 50%; background: rgba(255, 255, 255, 0.05); display: flex; align-items: center; justify-content: center; color: var(--text-gray); text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.1); }
+.footer-social a:hover { background: var(--primary-red); color: white; transform: translateY(-5px); border-color: var(--primary-red); }
+
+.back-to-top { position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; border-radius: 50%; background: var(--primary-red); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; opacity: 0; visibility: hidden; transition: all 0.4s ease; z-index: 999; box-shadow: 0 10px 30px rgba(230, 57, 70, 0.3); }
+.back-to-top.visible { opacity: 1; visibility: visible; }
+.back-to-top:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(230, 57, 70, 0.5); }
+
+.progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--primary-red), var(--accent-orange)); z-index: 1001; transition: width 0.1s ease; }
+
+.particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: hidden; }
+.particle { position: absolute; width: 4px; height: 4px; background: rgba(230, 57, 70, 0.3); border-radius: 50%; animation: particle 15s linear infinite; }
+
+.mobile-menu-btn { display: none; background: none; border: none; color: var(--text-white); font-size: 1.5rem; cursor: pointer; }
+
+.toast { position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%) translateY(100px); background: var(--card-bg); color: var(--text-white); padding: 15px 30px; border-radius: 50px; border: 1px solid rgba(230, 57, 70, 0.3); display: flex; align-items: center; gap: 10px; font-size: 0.9rem; z-index: 1002; opacity: 0; transition: all 0.4s ease; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+@media (max-width: 1024px) {
+    .niche-grid { grid-template-columns: repeat(2, 1fr); }
+    .tools-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-content { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .navbar { padding: 15px 20px; }
+    .nav-links { display: none; }
+    .mobile-menu-btn { display: block; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero-stats { flex-direction: column; gap: 20px; }
+    .hero-cta { flex-direction: column; }
+    .section { padding: 60px 20px; }
+    .section-title { font-size: 1.8rem; }
+    .ypp-requirements { grid-template-columns: 1fr; }
+    .niche-grid { grid-template-columns: 1fr; }
+    .tools-grid { grid-template-columns: 1fr; }
+    .timing-grid { grid-template-columns: 1fr; }
+    .monetization-grid { grid-template-columns: 1fr; }
+    .footer-content { grid-template-columns: 1fr; gap: 30px; }
+    .formula-cards { grid-template-columns: 1fr; }
+    .ypp-steps { flex-direction: column; align-items: center; }
+    .mistake-item { flex-direction: column; text-align: center; }
+    .strategy-item { flex-direction: column; text-align: center; }
+    .timing-card { flex-direction: column; text-align: center; }
+}
+</style>
+<base target="_blank">
 </head>
 <body>
+<div class="progress-bar" id="progressBar"></div>
+<div class="particles" id="particles"></div>
 
-    <!-- Hero Section -->
-    <header class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0f172a] via-[#0b0f19] to-[#1e1b4b] px-4 overflow-hidden">
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+<nav class="navbar" id="navbar">
+<a href="#" class="logo"><i class="fab fa-youtube"></i><span>YT Growth</span></a>
+<ul class="nav-links">
+<li><a href="#hero">Home</a></li>
+<li><a href="#growth">Growth</a></li>
+<li><a href="#ypp">YPP</a></li>
+<li><a href="#niche">Niche</a></li>
+<li><a href="#tools">AI Tools</a></li>
+<li><a href="#shorts">Shorts</a></li>
+<li><a href="#monetization">Monetize</a></li>
+<li><a href="#mistakes">Mistakes</a></li>
+</ul>
+<button class="mobile-menu-btn" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+</nav>
 
-        <div class="max-w-5xl mx-auto text-center relative z-10 py-12">
-            <span class="inline-block bg-red-500/10 text-red-400 border border-red-500/30 px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold tracking-wider uppercase mb-6 animate-pulse">
-                <i class="fa-solid fa-fire mr-1"></i> COMPLETE GUIDE
-            </span>
-            
-            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight leading-none mb-6">
-                AI Se YouTube Channel <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-400 to-yellow-400 glow-text">Fast Monetize Karo</span>
-            </h1>
-            
-            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                Sirf AI tools ki madad se bina camera, bina team, bina bade investment ke YouTube par real income start karo.
-            </p>
+<section class="hero" id="hero">
+<div class="hero-content">
+<div class="hero-badge"><i class="fas fa-robot"></i>AI Powered YouTube Growth Strategy</div>
+<h1>AI Se <span class="highlight">YouTube Channel</span><br>Fast Monetize Karo</h1>
+<p class="hero-subtitle">Sirf AI tools ki madad se - bina camera, bina team, bina bada investment ke<br>YouTube par real income start karo</p>
+<div class="hero-stats">
+<div class="stat-item"><span class="stat-number" id="counter1">273</span><span class="stat-label">Days Average</span></div>
+<div class="stat-item"><span class="stat-number" id="counter2">500</span><span class="stat-label">Hours Watch</span></div>
+<div class="stat-item"><span class="stat-number" id="counter3">1000</span><span class="stat-label">Subscribers</span></div>
+</div>
+<div class="hero-cta">
+<a href="#growth" class="btn-primary"><i class="fas fa-rocket"></i>Start Learning</a>
+<a href="#tools" class="btn-secondary"><i class="fas fa-tools"></i>Explore AI Tools</a>
+</div>
+</div>
+<div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+</section>
 
-            <div class="flex flex-wrap justify-center gap-4 mb-16">
-                <a href="#tools" class="px-8 py-4 bg-gradient-to-r from-red-600 to-orange-500 text-white font-bold rounded-full shadow-lg hover:from-red-500 hover:to-orange-400 transform hover:scale-105 transition-all duration-300">
-                    <i class="fa-solid fa-bolt mr-2"></i> Free AI Tools Dekho
-                </a>
-                <a href="#ypp" class="px-8 py-4 glass-card text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300">
-                    Requirements Check Karo
-                </a>
-            </div>
+<section class="section growth-formula" id="growth">
+<div class="section-header animate-on-scroll fade-up">
+<span class="section-tag">YouTube + AI = Fast Growth Formula</span>
+<h2 class="section-title">2024 Main YouTube AI Videos ka Platform Nahi Rah Gaya</h2>
+<p class="section-subtitle">Complete business ecosystem ban chuka hai - AI se content creation se lekar audience building, monetization tak sab kuch AI tools se manage kar sakte ho</p>
+</div>
+<div class="formula-cards">
+<div class="formula-card animate-on-scroll fade-up delay-1">
+<span class="formula-number">01</span>
+<div class="formula-icon icon-red"><i class="fas fa-brain"></i></div>
+<h3>AI Content Research</h3>
+<p>ChatGPT, Claude se trending topics, scripts aur video ideas generate karo bina kisi research ke</p>
+</div>
+<div class="formula-card animate-on-scroll fade-up delay-2">
+<span class="formula-number">02</span>
+<div class="formula-icon icon-green"><i class="fas fa-video"></i></div>
+<h3>AI Video Creation</h3>
+<p>ElevenLabs, CapCut AI, Canva AI se professional videos banao bina camera ke</p>
+</div>
+<div class="formula-card animate-on-scroll fade-up delay-3">
+<span class="formula-number">03</span>
+<div class="formula-icon icon-yellow"><i class="fas fa-magic"></i></div>
+<h3>AI Thumbnail Design</h3>
+<p>Midjourney, Adobe Firefly se click-worthy thumbnails banao jo CTR boost kare</p>
+</div>
+<div class="formula-card animate-on-scroll fade-up delay-4">
+<span class="formula-number">04</span>
+<div class="formula-icon icon-orange"><i class="fas fa-chart-line"></i></div>
+<h3>AI Analytics & SEO</h3>
+<p>VidIQ, TubeBuddy se keywords, tags aur optimal upload time find karo</p>
+</div>
+<div class="formula-card animate-on-scroll fade-up delay-5">
+<span class="formula-number">05</span>
+<div class="formula-icon icon-blue"><i class="fas fa-comments"></i></div>
+<h3>AI Community Management</h3>
+<p>Auto replies, comment management aur community engagement AI se handle karo</p>
+</div>
+<div class="formula-card animate-on-scroll fade-up delay-6">
+<span class="formula-number">06</span>
+<div class="formula-icon icon-purple"><i class="fas fa-dollar-sign"></i></div>
+<h3>AI Monetization</h3>
+<p>Multiple income streams automate karo - AdSense, sponsorships, affiliate sab AI optimize</p>
+</div>
+</div>
+</section>
 
-            <!-- Stats Bar -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto border-t border-white/10 pt-10">
-                <div class="p-4">
-                    <h3 class="text-3xl font-bold text-white mb-1">2.78B+</h3>
-                    <p class="text-xs text-gray-400 uppercase tracking-wider">YouTube Users</p>
-                </div>
-                <div class="p-4">
-                    <h3 class="text-3xl font-bold text-white mb-1">500 Hrs</h3>
-                    <p class="text-xs text-gray-400 uppercase tracking-wider">Har Minute Upload</p>
-                </div>
-                <div class="p-4">
-                    <h3 class="text-3xl font-bold text-green-400 mb-1">₹500+</h3>
-                    <p class="text-xs text-gray-400 uppercase tracking-wider">Per 1000 Views</p>
-                </div>
-                <div class="p-4">
-                    <h3 class="text-3xl font-bold text-red-400 mb-1">YouTube + AI</h3>
-                    <p class="text-xs text-gray-400 uppercase tracking-wider">Fast Growth Formula</p>
-                </div>
-            </div>
-        </div>
-    </header>
+<section class="section ypp-section" id="ypp">
+<div class="section-header animate-on-scroll fade-up">
+<span class="section-tag">YouTube Partner Program (YPP) Kya Chahiye?</span>
+<h2 class="section-title">Monetization ke Liye Official Requirements</h2>
+<p class="section-subtitle">2024 ke latest YPP join karne ke official requirements - inhe pura karo aur monetization start karo</p>
+</div>
+<div class="ypp-container">
+<div class="ypp-card animate-on-scroll scale-in">
+<div class="ypp-header">
+<h3 style="font-size: 1.5rem; margin-bottom: 10px;">YPP Join Karne ke Requirements</h3>
+<p style="color: var(--text-gray);">Sab conditions puri karo aur YouTube Partner Program mein join karo</p>
+</div>
+<div class="ypp-requirements">
+<div class="ypp-req-item animate-on-scroll fade-up delay-1">
+<div class="ypp-req-icon req-subscribers"><i class="fas fa-users"></i></div>
+<div class="ypp-req-number" style="color: var(--primary-red);">1,000</div>
+<div class="ypp-req-label">Subscribers Chahiye</div>
+</div>
+<div class="ypp-req-item animate-on-scroll fade-up delay-2">
+<div class="ypp-req-icon req-hours"><i class="fas fa-clock"></i></div>
+<div class="ypp-req-number" style="color: var(--accent-blue);">4,000</div>
+<div class="ypp-req-label">Watch Hours (12 Months)</div>
+</div>
+<div class="ypp-req-item animate-on-scroll fade-up delay-3">
+<div class="ypp-req-icon req-days"><i class="fas fa-calendar-check"></i></div>
+<div class="ypp-req-number" style="color: var(--accent-yellow);">2-Step</div>
+<div class="ypp-req-label">Verification Complete</div>
+</div>
+</div>
+<div class="ypp-steps">
+<div class="ypp-step animate-on-scroll fade-up delay-1"><div class="ypp-step-number">1</div><span>Channel Create Karo</span></div>
+<div class="ypp-step animate-on-scroll fade-up delay-2"><div class="ypp-step-number">2</div><span>Content Upload Karo</span></div>
+<div class="ypp-step animate-on-scroll fade-up delay-3"><div class="ypp-step-number">3</div><span>Requirements Puri Karo</span></div>
+<div class="ypp-step animate-on-scroll fade-up delay-4"><div class="ypp-step-number">4</div><span>Apply for YPP</span></div>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- Formula / Introduction Section -->
-    <section class="py-24 px-4 bg-[#090d16]">
-        <div class="max-w-4xl mx-auto text-center reveal">
-            <h2 class="text-xs font-bold text-red-500 uppercase tracking-widest mb-2">INTRODUCTION</h2>
-            <h3 class="text-3xl md:text-4xl font-bold mb-6 text-white">YouTube + AI = Fast Growth Formula</h3>
-            <p class="text-gray-300 text-lg leading-relaxed">
-                2026 mein YouTube sirf videos ka platform nahi rahaye ek complete business ecosystem ban chuka hai. Aur AI ne content creation ko itna aasan bana diya hai ki ab koi bhi ghar baithe professional quality content bana sakta hai. Is guide mein wo sab kuch hai jo ek beginner ko YouTube monetization tak pahunchane ke liye chahiye.
-            </p>
-        </div>
-    </section>
+<section class="section niche-section" id="niche">
+<div class="section-header animate-on-scroll fade-up">
+<span class="section-tag">Sahi Niche Kaise Choose Karein?</span>
+<h2 class="section-title">High RPM Niches 2024</h2>
+<p class="section-subtitle">Niche selection se hi aapka success decide hota hai - High RPM niches mein zyada earning hoti hai</p>
+</div>
+<div class="niche-grid">
+<div class="niche-card animate-on-scroll fade-up delay-1">
+<div class="niche-icon icon-red"><i class="fas fa-money-bill-trend-up"></i></div>
+<h3>Finance & Investment</h3>
+<p style="color: var(--text-gray); font-size: 0.9rem;">Stock market, crypto, personal finance tips</p>
+<div class="niche-stats"><div class="niche-stat">RPM: <span>$15-50</span></div><div class="niche-stat">Comp: <span>High</span></div></div>
+</div>
+<div class="niche-card animate-on-scroll fade-up delay-2">
+<div class="niche-icon icon-blue"><i class="fas fa-laptop-code"></i></div>
+<h3>AI & Technology</h3>
+<p style="color: var(--text-gray); font-size: 0.9rem;">AI tools, tech reviews, tutorials</p>
+<div class="niche-stats"><div class="niche-stat">RPM: <span>$10-30</span></div><div class="niche-stat">Comp: <span>Medium</span></div></div>
+</div>
+<div class="niche-card animate-on-scroll fade-up delay-3">
+<div class="niche-icon icon-green"><i class="fas fa-heart-pulse"></i></div>
+<h3>Health & Fitness</h3>
+<p style="color: var(--text-gray); font-size: 0.9rem;">Workout, diet, mental health</p>
+<div class="niche-stats"><div class="niche-stat">RPM: <span>$8-25</span></div><div class="niche-stat">Comp: <span>High</span></div></div>
+</div>
+<div class="niche-card animate-on-scroll fade-up delay-4">
+<div class="niche-icon icon-yellow"><i class="fas fa-graduation-cap"></i></div>
+<h3>Education & Skills</h3>
+<p style="color: var(--text-gray); font-size: 0.9rem;">Online courses, skill development</p>
+<div class="niche-stats"><div class="niche-stat">RPM: <span>$5-20</span></div><div class="niche-stat">Comp: <span>Medium</span></div></div>
+</div>
+<div class="niche-card animate-on-scroll fade-up delay-1">
+<div class="niche-icon icon-purple"><i class="fas fa-gamepad"></i></div>
+<h3>Gaming</h3>
+<p style="color: var(--text-gray); font-size: 0.9rem;">Game reviews, walkthroughs, live</p>
+<div class="niche-stats"><div class="niche-stat">RPM: <span>$3-15</span></div><div class="niche-stat">Comp: <span>Very High</span></div></div>
+</div>
+<div class="niche-card animate-on-scroll fade-up delay-2">
+<div class="niche-icon icon-orange"><i class="fas fa-plane"></i></div>
+<h3>Travel & Lifestyle</h3>
+<p style="color: var(--text-gray); font-size: 0.9rem;">Travel vlogs, lifestyle tips</p>
+<div class="niche-stats"><div class="niche-stat">RPM: <span>$4-12</span></div><div class="niche-stat">Comp: <span>Medium</span></div></div>
+</div>
+<div class="niche-card animate-on-scroll fade-up delay-3">
+<div class="niche-icon icon-red"><i class="fas fa-utensils"></i></div>
+<h3>Food & Cooking</h3>
+<p style="color: var(--text-gray); font-size: 0.9rem;">Recipes, cooking tips, food reviews</p>
+<div class="niche-stats"><div class="niche-stat">RPM: <span>$3-10</span></div><div class="niche-stat">Comp: <span>High</span></div></div>
+</div>
+<div class="niche-card animate-on-scroll fade-up delay-4">
+<div class="niche-icon icon-blue"><i class="fas fa-paint-brush"></i></div>
+<h3>Art & Design</h3>
+<p style="color: var(--text-gray); font-size: 0.9rem;">Digital art, design tutorials</p>
+<div class="niche-stats"><div class="niche-stat">RPM: <span>$4-15</span></div><div class="niche-stat">Comp: <span>Low</span></div></div>
+</div>
+</div>
+</section>
 
-    <!-- Case Study Section -->
-    <section class="py-20 px-4 bg-gradient-to-b from-[#090d16] to-[#0e1322]">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-12 reveal">
-                <span class="text-xs font-bold text-red-500 uppercase tracking-widest border border-red-500/20 px-3 py-1 rounded-full">REAL EXAMPLE AI CHANNEL</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold mt-3">Ek Hindi Facts Channel ki Story</h2>
-            </div>
+<section class="section ai-tools-section" id="tools">
+<div class="section-header animate-on-scroll fade-up">
+<span class="section-tag">Best AI Tools for YouTube Creators 2024</span>
+<h2 class="section-title">AI Tools Se Content Creation Process 10x Fast</h2>
+<p class="section-subtitle">Ye tools aapka pura content creation process automate kar denge - script se lekar thumbnail tak sab kuch AI se</p>
+</div>
+<div class="tools-grid">
+<div class="tool-card animate-on-scroll fade-up delay-1">
+<div class="tool-header">
+<div class="tool-icon icon-red"><i class="fas fa-robot"></i></div>
+<div class="tool-info"><h3>ChatGPT / Claude</h3><span class="tool-tag">Content Research</span></div>
+</div>
+<p class="tool-description">Scripts, titles, descriptions, tags aur trending topics ke liye best AI tools. Natural language mein perfect content generate karo.</p>
+<div class="tool-features"><span class="tool-feature">Script Writing</span><span class="tool-feature">Title Ideas</span><span class="tool-feature">SEO Tags</span><span class="tool-feature">Trending Topics</span></div>
+</div>
+<div class="tool-card animate-on-scroll fade-up delay-2">
+<div class="tool-header">
+<div class="tool-icon icon-blue"><i class="fas fa-microphone"></i></div>
+<div class="tool-info"><h3>ElevenLabs</h3><span class="tool-tag">AI Voiceover</span></div>
+</div>
+<p class="tool-description">Realistic AI voiceovers bina apni awaz use kiye. Multiple languages aur accents mein natural sounding voice generate karo.</p>
+<div class="tool-features"><span class="tool-feature">29+ Languages</span><span class="tool-feature">Natural Voice</span><span class="tool-feature">Voice Cloning</span><span class="tool-feature">Emotions</span></div>
+</div>
+<div class="tool-card animate-on-scroll fade-up delay-3">
+<div class="tool-header">
+<div class="tool-icon icon-purple"><i class="fas fa-wand-magic-sparkles"></i></div>
+<div class="tool-info"><h3>CapCut AI</h3><span class="tool-tag">Video Editing</span></div>
+</div>
+<p class="tool-description">Auto captions, AI effects, transitions aur professional editing features. Mobile aur desktop dono par free.</p>
+<div class="tool-features"><span class="tool-feature">Auto Captions</span><span class="tool-feature">AI Effects</span><span class="tool-feature">Transitions</span><span class="tool-feature">Free</span></div>
+</div>
+<div class="tool-card animate-on-scroll fade-up delay-1">
+<div class="tool-header">
+<div class="tool-icon icon-yellow"><i class="fas fa-palette"></i></div>
+<div class="tool-info"><h3>Canva AI</h3><span class="tool-tag">Thumbnail Design</span></div>
+</div>
+<p class="tool-description">AI generated thumbnails, social media posts aur channel art. Drag and drop interface se professional designs banao.</p>
+<div class="tool-features"><span class="tool-feature">AI Thumbnails</span><span class="tool-feature">Templates</span><span class="tool-feature">Brand Kit</span><span class="tool-feature">Easy UI</span></div>
+</div>
+<div class="tool-card animate-on-scroll fade-up delay-2">
+<div class="tool-header">
+<div class="tool-icon icon-green"><i class="fas fa-image"></i></div>
+<div class="tool-info"><h3>Midjourney / Adobe Firefly</h3><span class="tool-tag">AI Images</span></div>
+</div>
+<p class="tool-description">Text se high-quality images generate karo. Thumbnails, channel art aur video backgrounds ke liye perfect.</p>
+<div class="tool-features"><span class="tool-feature">Text to Image</span><span class="tool-feature">High Quality</span><span class="tool-feature">Styles</span><span class="tool-feature">Commercial Use</span></div>
+</div>
+<div class="tool-card animate-on-scroll fade-up delay-3">
+<div class="tool-header">
+<div class="tool-icon icon-orange"><i class="fas fa-chart-bar"></i></div>
+<div class="tool-info"><h3>VidIQ / TubeBuddy</h3><span class="tool-tag">Analytics & SEO</span></div>
+</div>
+<p class="tool-description">YouTube SEO, keyword research, competitor analysis aur optimal upload time find karo. Growth optimize karo.</p>
+<div class="tool-features"><span class="tool-feature">SEO Score</span><span class="tool-feature">Keywords</span><span class="tool-feature">Competitor</span><span class="tool-feature">Best Time</span></div>
+</div>
+<div class="tool-card animate-on-scroll fade-up delay-1">
+<div class="tool-header">
+<div class="tool-icon icon-red"><i class="fas fa-film"></i></div>
+<div class="tool-info"><h3>Animaker / Vyond</h3><span class="tool-tag">Animated Videos</span></div>
+</div>
+<p class="tool-description">Bina camera ke animated videos banao. Explainer videos, stories aur educational content ke liye best.</p>
+<div class="tool-features"><span class="tool-feature">Animations</span><span class="tool-feature">Characters</span><span class="tool-feature">Templates</span><span class="tool-feature">No Camera</span></div>
+</div>
+<div class="tool-card animate-on-scroll fade-up delay-2">
+<div class="tool-header">
+<div class="tool-icon icon-blue"><i class="fas fa-magnifying-glass-chart"></i></div>
+<div class="tool-info"><h3>Google Trends + Gemini</h3><span class="tool-tag">Trend Analysis</span></div>
+</div>
+<p class="tool-description">Trending topics aur keywords find karo. Real-time data se decide karo ki kis topic par video banani hai.</p>
+<div class="tool-features"><span class="tool-feature">Trends</span><span class="tool-feature">Real-time</span><span class="tool-feature">Region</span><span class="tool-feature">Free</span></div>
+</div>
+<div class="tool-card animate-on-scroll fade-up delay-3">
+<div class="tool-header">
+<div class="tool-icon icon-purple"><i class="fas fa-closed-captioning"></i></div>
+<div class="tool-info"><h3>Submagic / Opus Clip</h3><span class="tool-tag">Shorts Automation</span></div>
+</div>
+<p class="tool-description">Long videos se automatically Shorts banao. AI captions, b-rolls aur transitions add karo automatically.</p>
+<div class="tool-features"><span class="tool-feature">Auto Shorts</span><span class="tool-feature">Captions</span><span class="tool-feature">B-Rolls</span><span class="tool-feature">Viral</span></div>
+</div>
+</div>
+</section>
 
-            <div class="glass-card glow-red p-8 md:p-12 reveal flex flex-col md:flex-row items-center gap-8">
-                <div class="flex-1">
-                    <div class="flex items-center gap-3 mb-4 text-orange-400 font-semibold">
-                        <i class="fa-solid fa-circle-check"></i> 3 Mahine Mein Monetization Complete!
-                    </div>
-                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
-                        Ek creator ne sirf <strong>ChatGPT + ElevenLabs + CapCut</strong> use karke 3 mahine mein monetization complete ki. Koi camera nahi, koi studio nahi—sirf daily 2 Shorts aur weekly 3 long videos.
-                    </p>
-                </div>
-                
-                <div class="w-full md:w-auto grid grid-cols-2 md:grid-cols-4 gap-4 shrink-0">
-                    <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center">
-                        <span class="block text-3xl font-extrabold text-white">90</span>
-                        <span class="text-xs text-gray-400">Days Mein</span>
-                    </div>
-                    <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center">
-                        <span class="block text-3xl font-extrabold text-orange-400">1.2K</span>
-                        <span class="text-xs text-gray-400">Subscribers</span>
-                    </div>
-                    <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center">
-                        <span class="block text-3xl font-extrabold text-green-400">4200+</span>
-                        <span class="text-xs text-gray-400">Watch Hours</span>
-                    </div>
-                    <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center">
-                        <span class="block text-3xl font-extrabold text-blue-400">₹0</span>
-                        <span class="text-xs text-gray-400">Investment</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="section shorts-section" id="shorts">
+<div class="section-header animate-on-scroll fade-up">
+<span class="section-tag">YouTube Shorts ka Power - Fastest Growth Strategy</span>
+<h2 class="section-title">Shorts Se 1000 Subscribers 30 Days Mein</h2>
+<p class="section-subtitle">Shorts YouTube ka algorithm favorite format hai - Naye channels ke liye Shorts sabse fast growth tool hai</p>
+</div>
+<div class="shorts-container">
+<div class="shorts-card animate-on-scroll scale-in">
+<div class="shorts-strategies">
+<div class="strategy-item animate-on-scroll fade-up delay-1">
+<div class="strategy-icon icon-red"><i class="fas fa-stopwatch"></i></div>
+<div class="strategy-content">
+<h3>Hook Pehle 1 Second Mein</h3>
+<p>First 1 second mein viewer ko pakdo - Strong visual, text overlay ya surprising element use karo. 90% viewers first 3 seconds mein decide karte hain ki video dekhna hai ya nahi.</p>
+<span class="strategy-badge">CTR Booster</span>
+</div>
+</div>
+<div class="strategy-item animate-on-scroll fade-up delay-2">
+<div class="strategy-icon icon-yellow"><i class="fas fa-ruler"></i></div>
+<div class="strategy-content">
+<h3>30-45 Second Ideal Length</h3>
+<p>30-45 second ki Shorts sabse zyada viral hoti hai. Too long mat rakho - Shorts ka naam hi Shorts hai. Fast pacing aur quick cuts use karo.</p>
+<span class="strategy-badge">Optimal Length</span>
+</div>
+</div>
+<div class="strategy-item animate-on-scroll fade-up delay-3">
+<div class="strategy-icon icon-green"><i class="fas fa-calendar-days"></i></div>
+<div class="strategy-content">
+<h3>Daily Upload Consistency</h3>
+<p>Roz minimum 3-5 Shorts upload karo. Consistency se algorithm aapko promote karta hai. Ek din gap mat do - algorithm consistency expect karta hai.</p>
+<span class="strategy-badge">Algorithm Favorite</span>
+</div>
+</div>
+<div class="strategy-item animate-on-scroll fade-up delay-1">
+<div class="strategy-icon icon-blue"><i class="fas fa-fire"></i></div>
+<div class="strategy-content">
+<h3>Trending Audio & Topics Use Karo</h3>
+<p>YouTube Shorts trending sounds aur topics ko follow karo. Trending audio use karne se aapki video zyada logon tak pahunchti hai. Trending audio wale videos ko algorithm priority deta hai.</p>
+<span class="strategy-badge">Viral Formula</span>
+</div>
+</div>
+<div class="strategy-item animate-on-scroll fade-up delay-2">
+<div class="strategy-icon icon-purple"><i class="fas fa-bell"></i></div>
+<div class="strategy-content">
+<h3>CTA + Subscribe aur Long Video</h3>
+<p>Har Shorts ke end mein subscribe karne ka CTA do. Apni long videos ka link bhi share karo taki Shorts se long video traffic mile. Shorts se subscribers convert karo long videos ke liye.</p>
+<span class="strategy-badge">Conversion Hack</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- YouTube Partner Program Requirements -->
-    <section id="ypp" class="py-24 px-4 bg-[#0b0f19]">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-xs font-bold text-red-500 uppercase tracking-widest">STEP - 1: FORMAL REQUIREMENTS</h2>
-                <h3 class="text-3xl md:text-5xl font-extrabold mt-2">YouTube Partner Program (YPP) Kya Chahiye?</h3>
-                <p class="text-gray-400 mt-4 text-lg">Monetization se pehle aapko YPP join karna hoga. Ye rahein 2026 ki official requirements:</p>
-            </div>
+<section class="section timing-section" id="timing">
+<div class="section-header animate-on-scroll fade-up">
+<span class="section-tag">Best Upload Timing - Maximum Views Guarantee</span>
+<h2 class="section-title">Sahi Time Par Upload = 3x Views</h2>
+<p class="section-subtitle">Upload timing se hi aapke views decide hote hain - India ke audience ke hisaab se best timing</p>
+</div>
+<div class="timing-grid">
+<div class="timing-card animate-on-scroll fade-up delay-1">
+<div class="timing-icon icon-red"><i class="fas fa-sun"></i></div>
+<div class="timing-info">
+<h3>Morning - 7 AM to 9 AM</h3>
+<p>Office jaane se pehle log scroll karte hain - Morning commute time best hai. Students aur working professionals dono active hote hain.</p>
+<span class="timing-badge" style="background: rgba(230, 57, 70, 0.15); color: var(--primary-red);">Best for News & Education</span>
+</div>
+</div>
+<div class="timing-card animate-on-scroll fade-up delay-2">
+<div class="timing-icon icon-yellow"><i class="fas fa-sun"></i></div>
+<div class="timing-info">
+<h3>Afternoon - 12 PM to 2 PM</h3>
+<p>Lunch break mein mobile use zyada hota hai - Shorts aur quick videos ke liye best time. Office mein break time par log YouTube dekhte hain.</p>
+<span class="timing-badge" style="background: rgba(251, 191, 36, 0.15); color: var(--accent-yellow);">Best for Shorts & Entertainment</span>
+</div>
+</div>
+<div class="timing-card animate-on-scroll fade-up delay-3">
+<div class="timing-icon icon-orange"><i class="fas fa-moon"></i></div>
+<div class="timing-info">
+<h3>Evening - 6 PM to 8 PM</h3>
+<p>Office ke baad sabse zyada active time - Long videos ke liye perfect. Dinner se pehle log detailed content dekhte hain.</p>
+<span class="timing-badge" style="background: rgba(251, 146, 60, 0.15); color: var(--accent-orange);">Best for Long Videos & Tutorials</span>
+</div>
+</div>
+<div class="timing-card animate-on-scroll fade-up delay-4">
+<div class="timing-icon icon-purple"><i class="fas fa-moon"></i></div>
+<div class="timing-info">
+<h3>Night - 9 PM to 11 PM</h3>
+<p>Peak scrolling time - Sabse zyada views milte hain. Bed time par log entertainment content zyada dekhte hain.</p>
+<span class="timing-badge" style="background: rgba(167, 139, 250, 0.15); color: var(--accent-purple);">Best for Entertainment & Gaming</span>
+</div>
+</div>
+</div>
+</section>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 reveal mb-12">
-                <div class="glass-card p-6 text-center flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-red-500/10 text-red-400 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-                            <i class="fa-solid fa-users"></i>
-                        </div>
-                        <h4 class="text-4xl font-black text-white mb-2">1,000</h4>
-                    </div>
-                    <p class="text-sm text-gray-400 font-medium tracking-wide uppercase">Subscribers</p>
-                </div>
+<section class="section monetization-section" id="monetization">
+<div class="section-header animate-on-scroll fade-up">
+<span class="section-tag">Sirf AdSense Nahi - 6 Ways to Monetize YouTube</span>
+<h2 class="section-title">Multiple Income Streams Banao</h2>
+<p class="section-subtitle">Smart creators sirf AdSense par depend nahi karte - Multiple income streams se bano lakhpati creator</p>
+</div>
+<div class="monetization-grid">
+<div class="monetization-card animate-on-scroll fade-up delay-1">
+<div class="monetization-icon icon-red"><i class="fas fa-ad"></i></div>
+<h3>YouTube AdSense</h3>
+<p>Google AdSense se video ads se earning. RPM niche par depend karta hai - Finance niche mein $15-50 RPM mil sakta hai.</p>
+<div class="monetization-earning">Earning: <span>$500-$10,000/month</span> depending on views</div>
+</div>
+<div class="monetization-card animate-on-scroll fade-up delay-2">
+<div class="monetization-icon icon-yellow"><i class="fas fa-handshake"></i></div>
+<h3>Brand Sponsorships</h3>
+<p>Brands se direct sponsorship lekar unke products promote karo. 10K subscribers ke baad brands approach karte hain.</p>
+<div class="monetization-earning">Earning: <span>$100-$5,000/video</span> depending on niche</div>
+</div>
+<div class="monetization-card animate-on-scroll fade-up delay-3">
+<div class="monetization-icon icon-green"><i class="fas fa-link"></i></div>
+<h3>Affiliate Marketing</h3>
+<p>Amazon, Flipkart, Hostinger jaise platforms se affiliate links share karo. Har sale par commission earn karo.</p>
+<div class="monetization-earning">Earning: <span>$200-$3,000/month</span> passive income</div>
+</div>
+<div class="monetization-card animate-on-scroll fade-up delay-1">
+<div class="monetization-icon icon-blue"><i class="fas fa-download"></i></div>
+<h3>Digital Products</h3>
+<p>Ebooks, courses, templates, presets sell karo. One time create karo aur baar baar sell karo. 100% profit margin.</p>
+<div class="monetization-earning">Earning: <span>$500-$10,000/month</span> scalable income</div>
+</div>
+<div class="monetization-card animate-on-scroll fade-up delay-2">
+<div class="monetization-icon icon-purple"><i class="fas fa-crown"></i></div>
+<h3>Channel Membership</h3>
+<p>Exclusive content, badges, emojis aur perks dekar members se monthly fee lo. Loyal fans se recurring income.</p>
+<div class="monetization-earning">Earning: <span>$1-$50/member</span> recurring monthly</div>
+</div>
+<div class="monetization-card animate-on-scroll fade-up delay-3">
+<div class="monetization-icon icon-orange"><i class="fas fa-heart"></i></div>
+<h3>Super Thanks & Chat</h3>
+<p>Live streams aur premieres mein fans se Super Thanks aur Super Chat se direct earning. Real-time income during streams.</p>
+<div class="monetization-earning">Earning: <span>$1-$500/stream</span> depending on audience</div>
+</div>
+</div>
+</section>
 
-                <div class="glass-card p-6 text-center flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-                            <i class="fa-solid fa-clock"></i>
-                        </div>
-                        <h4 class="text-4xl font-black text-white mb-2">4,000</h4>
-                    </div>
-                    <p class="text-sm text-gray-400 font-medium tracking-wide uppercase">Watch Hours (Long Videos)</p>
-                </div>
+<section class="section mistakes-section" id="mistakes">
+<div class="section-header animate-on-scroll fade-up">
+<span class="section-tag">7 Common Mistakes Jo Growth Rok Dete Hain</span>
+<h2 class="section-title">Ye Galtiyan Mat Karo - Growth Ruk Jayegi</h2>
+<p class="section-subtitle">90% new creators ye mistakes karte hain aur unka growth ruk jata hai - Inhe avoid karo aur fast grow karo</p>
+</div>
+<div class="mistakes-list">
+<div class="mistake-item animate-on-scroll fade-up delay-1">
+<div class="mistake-number">1</div>
+<div class="mistake-content">
+<h3>Inconsistent Upload Schedule</h3>
+<p>Roz ya alternate day upload karo - Algorithm consistency expect karta hai. Ek hafte mein 3-4 videos minimum upload karo.</p>
+</div>
+</div>
+<div class="mistake-item animate-on-scroll fade-up delay-2">
+<div class="mistake-number">2</div>
+<div class="mistake-content">
+<h3>Poor Thumbnail & Title</h3>
+<p>Thumbnail aur title se hi CTR decide hota hai. Click-worthy thumbnails banao aur curiosity-driven titles use karo.</p>
+</div>
+</div>
+<div class="mistake-item animate-on-scroll fade-up delay-3">
+<div class="mistake-number">3</div>
+<div class="mistake-content">
+<h3>Copying Others Content</h3>
+<p>Original content banao - Copied content par copyright strike aur channel ban ho sakta hai. Apna unique style develop karo.</p>
+</div>
+</div>
+<div class="mistake-item animate-on-scroll fade-up delay-1">
+<div class="mistake-number">4</div>
+<div class="mistake-content">
+<h3>Ignoring SEO & Tags</h3>
+<p>SEO optimize karo - Title, description, tags aur keywords sahi se use karo. VidIQ ya TubeBuddy se SEO score check karo.</p>
+</div>
+</div>
+<div class="mistake-item animate-on-scroll fade-up delay-2">
+<div class="mistake-number">5</div>
+<div class="mistake-content">
+<h3>Not Engaging with Audience</h3>
+<p>Comments ka reply karo, community post karo aur audience se interact karo. Engagement se algorithm aapko promote karta hai.</p>
+</div>
+</div>
+<div class="mistake-item animate-on-scroll fade-up delay-3">
+<div class="mistake-number">6</div>
+<div class="mistake-content">
+<h3>Wrong Niche Selection</h3>
+<p>Sahi niche choose karo jo aapko passion ho aur jisme RPM high ho. Wrong niche mein growth aur earning dono kam hoti hai.</p>
+</div>
+</div>
+<div class="mistake-item animate-on-scroll fade-up delay-1">
+<div class="mistake-number">7</div>
+<div class="mistake-content">
+<h3>Giving Up Too Early</h3>
+<p>100 videos ke baad hi result aate hain. Pehle 3-6 months mein give up mat karo - Consistency se hi success milti hai.</p>
+</div>
+</div>
+</div>
+</section>
 
-                <div class="glass-card p-6 text-center flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-purple-500/10 text-purple-400 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-                            <i class="fa-solid fa-eye"></i>
-                        </div>
-                        <h4 class="text-4xl font-black text-white mb-2">1 Cr</h4>
-                    </div>
-                    <p class="text-sm text-gray-400 font-medium tracking-wide uppercase">Shorts Views (90 Days)</p>
-                </div>
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-brand">
+<h3><i class="fab fa-youtube"></i> YT Growth</h3>
+<p>AI se YouTube channel grow karo aur fast monetize karo. Sirf AI tools ki madad se bina camera, bina team, bina bada investment ke.</p>
+<div class="footer-social">
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+</div>
+</div>
+<div class="footer-links">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
+<li><a href="#growth"><i class="fas fa-rocket"></i> Growth</a></li>
+<li><a href="#ypp"><i class="fas fa-dollar-sign"></i> YPP</a></li>
+<li><a href="#niche"><i class="fas fa-bullseye"></i> Niche</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Resources</h4>
+<ul>
+<li><a href="#tools"><i class="fas fa-tools"></i> AI Tools</a></li>
+<li><a href="#shorts"><i class="fas fa-video"></i> Shorts</a></li>
+<li><a href="#monetization"><i class="fas fa-money-bill"></i> Monetize</a></li>
+<li><a href="#mistakes"><i class="fas fa-exclamation-triangle"></i> Mistakes</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h4>Support</h4>
+<ul>
+<li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+<li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+<li><a href="#"><i class="fas fa-shield-alt"></i> Privacy</a></li>
+<li><a href="#"><i class="fas fa-file-contract"></i> Terms</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p> 2024 YT Growth. All rights reserved. | AI Se YouTube Channel Fast Monetize Karo</p>
+</div>
+</footer>
 
-                <div class="glass-card p-6 text-center flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-green-500/10 text-green-400 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <h4 class="text-2xl font-bold text-white mb-2">Complete</h4>
-                    </div>
-                    <p class="text-sm text-gray-400 font-medium tracking-wide uppercase">2-Step Verification</p>
-                </div>
-            </div>
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
 
-            <div class="bg-gradient-to-r from-blue-950 to-indigo-950 border border-blue-500/30 p-6 rounded-2xl flex items-start gap-4 reveal">
-                <div class="text-blue-400 text-2xl mt-1"><i class="fa-solid fa-lightbulb"></i></div>
-                <div>
-                    <h5 class="font-bold text-white text-lg mb-1">Pro Tip: Simultaneously Upload Karo</h5>
-                    <p class="text-gray-300">Long videos aur Shorts dono simultaneously upload karo. Long videos watch Hours deti hain, Shorts subscribers laate hain. Dono milake fastest YPP route hain.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="toast" id="toast"><i class="fas fa-check-circle"></i><span id="toastMessage">Coming Soon!</span></div>
 
-    <!-- Niches Section -->
-    <section class="py-24 px-4 bg-[#090d16]">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <span class="text-xs font-bold text-orange-400 uppercase tracking-widest">STEP - 2: SMART PLANNING</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold mt-2">Sahi Niche Kaise Choose Karein?</h2>
-                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Niche selection YouTube success ka sabse important decision hai. High RPM niches mein zyada ads aate hain matlab zyada earning. Ye hain 2026 ke best niches:</p>
-            </div>
+<script>
+// Progress Bar
+window.addEventListener('scroll', function() {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.getElementById('progressBar').style.width = scrolled + '%';
+});
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal mb-12">
-                
-                <div class="glass-card p-6 flex flex-col justify-between border-t-4 border-t-emerald-500">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <h4 class="text-xl font-bold text-white">Finance & Investment</h4>
-                            <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded font-mono uppercase">Very High Competition</span>
-                        </div>
-                        <div class="bg-white/5 rounded-lg p-3 mb-4">
-                            <span class="text-xs text-gray-400 block">Estimated RPM</span>
-                            <span class="text-2xl font-bold text-emerald-400">₹800 - 2000</span>
-                        </div>
-                    </div>
-                </div>
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
 
-                <div class="glass-card p-6 flex flex-col justify-between border-t-4 border-t-cyan-500 relative overflow-hidden">
-                    <div class="absolute -right-2 -top-2 bg-red-500 text-white text-[10px] uppercase tracking-wider font-extrabold px-3 py-1 rotate-12 shadow">RECOMMENDED</div>
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <h4 class="text-xl font-bold text-white">AI & Technology</h4>
-                            <span class="text-xs bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-2 py-0.5 rounded font-mono uppercase">High Demand</span>
-                        </div>
-                        <div class="bg-white/5 rounded-lg p-3 mb-4">
-                            <span class="text-xs text-gray-400 block">Estimated RPM</span>
-                            <span class="text-2xl font-bold text-cyan-400">₹600 - 1500</span>
-                        </div>
-                    </div>
-                </div>
+// Back to top button
+window.addEventListener('scroll', function() {
+    const backToTop = document.getElementById('backToTop');
+    if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+});
 
-                <div class="glass-card p-6 flex flex-col justify-between border-t-4 border-t-indigo-500">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <h4 class="text-xl font-bold text-white">Education & Facts</h4>
-                            <span class="text-xs bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-2 py-0.5 rounded font-mono uppercase">Best for Beginners</span>
-                        </div>
-                        <div class="bg-white/5 rounded-lg p-3 mb-4">
-                            <span class="text-xs text-gray-400 block">Estimated RPM</span>
-                            <span class="text-2xl font-bold text-indigo-400">₹300 - 800</span>
-                        </div>
-                    </div>
-                </div>
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
-                <div class="glass-card p-6 flex flex-col justify-between border-t-4 border-t-rose-500">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <h4 class="text-xl font-bold text-white">Health & Fitness</h4>
-                            <span class="text-xs bg-rose-500/10 text-rose-400 border border-rose-500/20 px-2 py-0.5 rounded font-mono uppercase">Medium Competition</span>
-                        </div>
-                        <div class="bg-white/5 rounded-lg p-3 mb-4">
-                            <span class="text-xs text-gray-400 block">Estimated RPM</span>
-                            <span class="text-2xl font-bold text-rose-400">₹500 - 1200</span>
-                        </div>
-                    </div>
-                </div>
+// Intersection Observer for animations
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
 
-                <div class="glass-card p-6 flex flex-col justify-between border-t-4 border-t-amber-500">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <h4 class="text-xl font-bold text-white">Motivation</h4>
-                            <span class="text-xs bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2 py-0.5 rounded font-mono uppercase">Low Competition</span>
-                        </div>
-                        <div class="bg-white/5 rounded-lg p-3 mb-4">
-                            <span class="text-xs text-gray-400 block">Estimated RPM</span>
-                            <span class="text-2xl font-bold text-amber-400">₹200 - 600</span>
-                        </div>
-                    </div>
-                </div>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
 
-                <div class="glass-card p-6 flex flex-col justify-between border-t-4 border-t-purple-500">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <h4 class="text-xl font-bold text-white">Gaming</h4>
-                            <span class="text-xs bg-purple-500/10 text-purple-400 border border-purple-500/20 px-2 py-0.5 rounded font-mono uppercase">Very High Views</span>
-                        </div>
-                        <div class="bg-white/5 rounded-lg p-3 mb-4">
-                            <span class="text-xs text-gray-400 block">Estimated RPM</span>
-                            <span class="text-2xl font-bold text-purple-400">₹150 - 500</span>
-                        </div>
-                    </div>
-                </div>
+document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
+});
 
-            </div>
+// Particles
+function createParticles() {
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 15 + 's';
+        particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+        particlesContainer.appendChild(particle);
+    }
+}
+createParticles();
 
-            <div class="p-6 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-orange-500/20 rounded-2xl reveal text-center max-w-3xl mx-auto">
-                <p class="text-gray-300 text-base">
-                    💡 <strong>Beginner ke liye Best:</strong> <span class="text-orange-400 font-semibold">AI + Technology ya Education niche</span>. Kum competition, zyada demand, aur AI se easily banane wala content.
-                </p>
-            </div>
-        </div>
-    </section>
+// Counter animation
+function animateCounters() {
+    const counters = document.querySelectorAll('.stat-number');
+    counters.forEach(counter => {
+        const target = parseInt(counter.innerText);
+        const duration = 2000;
+        const increment = target / (duration / 16);
+        let current = 0;
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                counter.innerText = target;
+                clearInterval(timer);
+            } else {
+                counter.innerText = Math.floor(current);
+            }
+        }, 16);
+    });
+}
 
-    <!-- AI Tools Automation Section -->
-    <section id="tools" class="py-24 px-4 bg-[#0b0f19] relative">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <span class="text-xs font-bold text-red-500 uppercase tracking-widest">STEP - 3: BEST AI TOOLS</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold mt-2">Best AI Tools For YouTube Creators 2026</h2>
-                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Ye tools aapka poora content creation process automate kar denge.</p>
-            </div>
+// Trigger counter animation when hero is visible
+const heroObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateCounters();
+            heroObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
-                
-                <div class="glass-card p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-green-500/20 text-green-400 rounded-xl flex items-center justify-center text-lg"><i class="fa-solid fa-brain"></i></div>
-                            <h4 class="text-lg font-bold text-white">ChatGPT / Claude</h4>
-                        </div>
-                        <p class="text-sm text-gray-400 mb-4">Complete YouTube script, title, description aur tags generate karein. Free plan se shuru karein.</p>
-                    </div>
-                </div>
+heroObserver.observe(document.querySelector('.hero'));
 
-                <div class="glass-card p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center text-lg"><i class="fa-solid fa-microphone"></i></div>
-                            <h4 class="text-lg font-bold text-white">ElevenLabs</h4>
-                        </div>
-                        <p class="text-sm text-gray-400 mb-4">AI Voiceover: Ekdum natural Hindi/English voice generate karo. Free plan mein 10,000 characters/month.</p>
-                    </div>
-                </div>
+// Toast notification
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toastMessage');
+    toastMessage.innerText = message;
+    toast.classList.add('show');
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 3000);
+}
 
-                <div class="glass-card p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-indigo-500/20 text-indigo-400 rounded-xl flex items-center justify-center text-lg"><i class="fa-solid fa-video"></i></div>
-                            <h4 class="text-lg font-bold text-white">CapCut AI</h4>
-                        </div>
-                        <p class="text-sm text-gray-400 mb-4">Video Editor: Auto captions, background removal, transitions — sab kuch automatic. Bilkul Free hai.</p>
-                    </div>
-                </div>
+// Mobile menu toggle
+function toggleMobileMenu() {
+    showToast('Mobile menu coming soon!');
+}
 
-                <div class="glass-card p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-pink-500/20 text-pink-400 rounded-xl flex items-center justify-center text-lg"><i class="fa-solid fa-palette"></i></div>
-                            <h4 class="text-lg font-bold text-white">Canva AI</h4>
-                        </div>
-                        <p class="text-sm text-gray-400 mb-4">Thumbnails: Professional YouTube thumbnails minutes mein Magic Design feature se AI suggest karta hai.</p>
-                    </div>
-                </div>
+// Smooth scroll for all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
 
-                <div class="glass-card p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-amber-500/20 text-amber-400 rounded-xl flex items-center justify-center text-lg"><i class="fa-solid fa-film"></i></div>
-                            <h4 class="text-lg font-bold text-white">Animaker / Vyond</h4>
-                        </div>
-                        <p class="text-sm text-gray-400 mb-4">Bina camera ke animated educational videos banao. Face show karne ki zaroorat nahi.</p>
-                    </div>
-                </div>
+// Add hover effects to all cards
+document.querySelectorAll('.formula-card, .niche-card, .tool-card, .monetization-card, .timing-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px) scale(1.02)';
+    });
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+    });
+});
 
-                <div class="glass-card p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-red-500/20 text-red-400 rounded-xl flex items-center justify-center text-lg"><i class="fa-solid fa-chart-line"></i></div>
-                            <h4 class="text-lg font-bold text-white">VidIQ / TubeBuddy</h4>
-                        </div>
-                        <p class="text-sm text-gray-400 mb-4">Trending topics, keywords aur competitor analysis. Free plan bahut kuch deta hai.</p>
-                    </div>
-                </div>
+// Parallax effect for hero
+window.addEventListener('scroll', function() {
+    const scrolled = window.pageYOffset;
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        hero.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
+    }
+});
 
-                <div class="glass-card p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-purple-500/20 text-purple-400 rounded-xl flex items-center justify-center text-lg"><i class="fa-solid fa-image"></i></div>
-                            <h4 class="text-lg font-bold text-white">Midjourney / Firefly</h4>
-                        </div>
-                        <p class="text-sm text-gray-400 mb-4">AI Images: Thumbnail ke liye unique AI-generated Images banao. Copyright-Free hote hain.</p>
-                    </div>
-                </div>
+// Dynamic glow effect on mouse move
+document.addEventListener('mousemove', function(e) {
+    const cards = document.querySelectorAll('.formula-card, .ypp-card, .shorts-card');
+    cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        if (x >= 0 && x <= rect.width && y >= 0 && y <= rect.height) {
+            card.style.setProperty('--mouse-x', x + 'px');
+            card.style.setProperty('--mouse-y', y + 'px');
+        }
+    });
+});
 
-                <div class="glass-card p-6 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-cyan-500/20 text-cyan-400 rounded-xl flex items-center justify-center text-lg"><i class="fa-solid fa-compass"></i></div>
-                            <h4 class="text-lg font-bold text-white">Google Trends + Gemini</h4>
-                        </div>
-                        <p class="text-sm text-gray-400 mb-4">Topic Research: Trending topics real-time dekhna aur Gemini se unpar content ideas generate karna.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-12 border-t border-white/5 bg-[#070a10] text-center text-gray-500 text-sm">
-        <div class="max-w-4xl mx-auto px-4">
-            <p class="mb-2">© 2026 AI YouTube Masterclass. AI Growth Formula. All Rights Reserved.</p>
-            <p class="text-xs text-gray-600">Disclaimer: YouTube monetization updates change over time. Follow official terms alongside smart AI automation strategies.</p>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const reveals = document.querySelectorAll('.reveal');
-
-            const revealOnScroll = () => {
-                const triggerBottom = window.innerHeight * 0.85;
-
-                reveals.forEach(reveal => {
-                    const revealTop = reveal.getBoundingClientRect().top;
-
-                    if (revealTop < triggerBottom) {
-                        reveal.classList.add('active');
-                    }
-                });
-            };
-
-            // Run once on load to show items already in view
-            revealOnScroll();
-            
-            // Run on every scroll event smoothly
-            window.addEventListener('scroll', revealOnScroll);
-        });
-    </script>
-
+// Initialize all animations on load
+window.addEventListener('load', function() {
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight) {
+            el.classList.add('visible');
+        }
+    });
+});
+</script>
 </body>
 </html>
